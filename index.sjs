@@ -158,16 +158,6 @@ macro sql {
     }
 
     return from;
-
-    src = src.replace(/__sweet_sql_id__[0-9]+/g, function(id) {
-      return mapping[id]
-    })
-
-
-    var tokens = parser.read(src);
-
-    tokens.pop(); // EOF
-    return tokens;
   }
 }
 
