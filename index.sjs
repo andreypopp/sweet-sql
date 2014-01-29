@@ -72,7 +72,6 @@ macro sql {
       }).join('');
     }
 
-    var builder = require('sql');
     var parse = require('sql-parser').parse;
 
     var body = #{ $body }[0].token.value.raw;
